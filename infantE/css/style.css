@@ -1,0 +1,50 @@
+body {
+background-color:rgba(224,255,255);
+border: 4px outset   rgba(255,248,220);
+ width: 350px;
+  height:auto;
+
+
+}
+.block {
+  display: block;
+  width: 320px;
+height:400px;
+  border: 2px outset  rgba(34,195,158,0.9);
+  touch-action: none;
+
+
+ 
+}
+.inside_blocks {
+width: 150px;
+  height:50px;
+  display: inline-block;
+
+}
+
+
+
+.dropzone {
+  width: 320px;
+  height:auto;
+  float:left;
+ border: 4px outset  rgba(34,195,158,0.9);
+ margin:1px 0 0 0;
+text-align: center;
+margin-top:3px;
+
+}
+
+.cliqi input{
+  margin-top: 40px;
+  width: 60px;
+  height: 30px;
+ font-size: 1em;
+ box-shadow: 3px 2px green;
+  background: #00AA7FFF;
+  margin-left:2px;
+  display: block;
+
+
+} 

@@ -1,0 +1,48 @@
+body {
+   background-image: url('../img/maos.png');
+  background-repeat:repeat;
+  border: 4px outset   rgba(255,248,220);
+ width: 350px;
+  height:auto;
+ touch-action: none;
+
+}
+.block {
+  display: block;
+  width: 300px;
+  height: 250px;
+  border: 4px outset  rgba(34,195,158,0.9);
+  touch-action: none;
+margin-top:5px;
+ 
+}
+.inside_blocks {
+width: 59px;
+  height: 59px;
+  display: inline-block;
+ margin:15px 0 0 10px;
+}
+
+
+
+.dropzone {
+  width: 300px;
+  height:auto;
+  float:left;
+ border: 4px outset  rgba(34,195,158,0.9);
+ margin:10px 0 0 0;
+
+}
+
+.cliqi input{
+  margin-top:100px;
+  width: 80px;
+  height: 40px;
+ font-size: 1em;
+ box-shadow: 4px 3px green;
+  background: #00AA7FFF;
+  margin-left:2px;
+  display: block;
+
+
+}
