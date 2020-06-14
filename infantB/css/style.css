@@ -2,9 +2,10 @@ body {
    background-image: url('../img/maos.png');
   background-repeat:repeat;
   border: 4px outset   rgba(255,248,220);
- width: 350px;
+ width: 320px;
   height:auto;
  touch-action: none;
+text-align:center;
 
 }
 .block {
@@ -18,7 +19,7 @@ margin-top:5px;
 }
 .inside_blocks {
 width: 59px;
-  height: 59px;
+  height: auto;
   display: inline-block;
  margin:15px 0 0 10px;
 }
@@ -30,12 +31,12 @@ width: 59px;
   height:auto;
   float:left;
  border: 4px outset  rgba(34,195,158,0.9);
- margin:10px 0 0 0;
+ margin:5px 0 0 0;
 
 }
 
 .cliqi input{
-  margin-top:100px;
+  margin-top:50px;
   width: 80px;
   height: 40px;
  font-size: 1em;

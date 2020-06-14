@@ -1,16 +1,17 @@
 body {
 background-color:rgba(224,255,255);
 border: 4px outset   rgba(255,248,220);
- width: 350px;
+ width: 330px;
   height:auto;
+text-align:center;
  touch-action: none;
 
 }
 .block {
   display: block;
-  width: 320px;
-height: 220px;
-  border: 4px outset  rgba(34,195,158,0.9);
+  width: 300px;
+height: auto;
+  border: 2px outset  rgba(34,195,158,0.9);
 margin-top:5px;
   touch-action: none;
 
@@ -18,7 +19,7 @@ margin-top:5px;
  
 }
 .inside_blocks {
-width: 100px;
+width: 90px;
   height:auto;
   display: inline-block;
   margin-top: 10px;
@@ -38,7 +39,7 @@ text-align: center;
 }
 
 .cliqi input{
-  margin-top: 40px;
+  margin-top:10px;
   width: 80px;
   height: 40px;
  font-size: 1em;

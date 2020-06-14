@@ -4,6 +4,7 @@ body {
   border: 4px outset   rgba(255,248,220);
  width: 350px;
   height:auto;
+text-align:center;
  touch-action: none;
 
 }

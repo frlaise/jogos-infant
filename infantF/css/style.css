@@ -1,18 +1,19 @@
 body {
-  color: white;
-  text-align: center;
+background-color:#AAFFFFFF;
+border: 4px inset  rgba(34,195,158,0.9);
+ width: 320px;
+  height:auto;
+text-align:center;
+font-family:arial,helvetica;
+ touch-action: none;
 
 }
 .block {
   display: block;
-  width: 350px;
-background:  linear-gradient(3deg, rgba(37,195,34,0.9) 33%, rgba(41,137,242,0.4) 92%);
-  touch-action: none;
-
-
-}
-.block, .dropzone {
-  height: 500px;  
+  width: 310px;
+height:auto;
+  border: 2px outset  rgba(34,195,158,0.9);
+  touch-action: none; 
 }
 
 .inside_blocks {
@@ -24,22 +25,26 @@ background:  linear-gradient(3deg, rgba(37,195,34,0.9) 33%, rgba(41,137,242,0.4)
  
 }
 .dropzone {
-  width: 300px;
-  height: 230px;
+  width: 310px;
+  height:auto;
   float:left;
-  margin-top: 10px;
+ border: 4px outset  rgba(34,195,158,0.9);
+ margin:1px 0 0 0;
+text-align: center;
+margin-top:30px;
+
 
 }
-
 
 .cliqi input{
-  margin-top:5px;
-  width: 80px;
-  height: 40px;
+  margin-top: 40px;
+  width: 60px;
+  height: 30px;
  font-size: 1em;
- box-shadow: 4px 3px green;
-  background: #55AA00FF;
-  margin-left:10px;
+ box-shadow: 3px 2px green;
+  background: #00AA7FFF;
+  margin-left:2px;
   display: block;
 
-}
+
+} 

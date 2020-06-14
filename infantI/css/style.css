@@ -1,19 +1,26 @@
 body {
-
-background-image: linear-gradient(to right top, #f0ab3f, #f4a752, #f5a462, #f4a272, #f0a280);
-border: 4px outset   rgba(255,248,220);
- width: 360px;
+background-color:#AAFFFFFF;
+border: 4px inset  rgba(34,195,158,0.9);
+ width: 320px;
   height:auto;
-text-align:center;
  touch-action: none;
 
 }
+
+h2{
+text-align:center;
+font-family:arial,helvetica;
+  margin-top:3px;
+
+}
 .block {
+
  display: block;
-width: 330px;
+width: 320px;
 height:auto;
 background-image: linear-gradient(to right top, #f0ab3f, #f4a752, #f5a462, #f4a272, #f0a280);
   touch-action: none;
+  margin-top:3px;
 
 
 }
@@ -22,10 +29,8 @@ background-image: linear-gradient(to right top, #f0ab3f, #f4a752, #f5a462, #f4a2
   width: 85px;
   height: 95px;
   display: inline-block;
-  margin-top:5px;
-
-
- 
+  margin-top:3px;
+  margin-left:5px;
 }
 .dropzone {
   width: 300px;
@@ -39,8 +44,8 @@ background-image: linear-gradient(to right top, #f0ab3f, #f4a752, #f5a462, #f4a2
 
 .cliqi input{
   margin-top:2px;
-  width: 80px;
-  height: 40px;
+  width: 60px;
+  height: 30px;
  font-size: 1em;
  box-shadow: 4px 3px green;
   background: #F0843F;
