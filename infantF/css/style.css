@@ -1,50 +1,129 @@
-body {
-background-color:#AAFFFFFF;
-border: 4px inset  rgba(34,195,158,0.9);
- width: 320px;
-  height:auto;
-text-align:center;
-font-family:arial,helvetica;
- touch-action: none;
+* {
+  box-sizing: border-box;
 
 }
-.block {
-  display: block;
-  width: 310px;
-height:auto;
-  border: 2px outset  rgba(34,195,158,0.9);
-  touch-action: none; 
+
+
+html{
+  background: #FFAA7FFF;
 }
 
-.inside_blocks {
-  width: 60px;
-  height: 50px;
+
+p{
+ font-family: 'MuseoModerno', cursive;
+ font-size:12px;
+  line-height: 1;
+  color: #000;
+  margin-left: 10px;
+
+}
+h1{
+   font-family: 'MuseoModerno', cursive;
+  line-height: 0.1;
+  color: #0C14A6FF;
+  margin-left:60px;
+
+}
+
+
+.draggable {
+  user-select: none;
   display: inline-block;
-  margin-top: 20px;
-
- 
+margin-top: 17px;
+ margin-left:10px;
+  
 }
+
+#outer-dropzone {
+  width: 350px;
+background-image: url("../img/num.png");
+ background-repeat:no-repeat;
+  height: 200px;
+  margin-top:2px;
+  margin-left:40px;
+  border: 5px solid #fff;
+   animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 30px blue;}
+}
+
+#inner-dropzone {
+   height:270px;
+    width: 300px;
+  margin-left:20px;
+}
+
+
+
 .dropzone {
-  width: 310px;
-  height:auto;
-  float:left;
- border: 4px outset  rgba(34,195,158,0.9);
- margin:1px 0 0 0;
-text-align: center;
-margin-top:30px;
+  width: 380px;
+height:290px;
+background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(84,253,45,1) 100%);
+  border: outset 7px #fff;
+  border-radius: 4px;
+  margin-top:20px;
+  padding:5px;
+  margin-left:10px;
+
+  transition: background-color 0.3s;
+}
+
+
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: transparent;
+}
+
+input{
+  border: 10px outset #29e5e7;
+  width:70px;
+  height:60px;
+ font-size:24;
+font-family: 'MuseoModerno', cursive;
+  background:  #FFAA7FFF;
+  margin-right:80px;
+  display: inline;
+float:left;
 
 
 }
 
-.cliqi input{
-  margin-top: 40px;
-  width: 60px;
-  height: 30px;
- font-size: 1em;
- box-shadow: 3px 2px green;
-  background: #00AA7FFF;
-  margin-left:2px;
-  display: block;
+button, a{
+  border: none;
+
+}
 
 
-} 
+a{
+  cursor: pointer;
+}
+
+a img{
+  width:70px;
+  height:60px;
+  margin-right:80px;
+ border: 10px inset #29e5e7;
+
+}

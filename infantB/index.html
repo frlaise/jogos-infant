@@ -3,40 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
 	<title>Jogo Dois</title>
 	<link rel="stylesheet" href="css/style.css">
 	 <script src="js/interact.min.js"></script>
 </head>
 <body>
+<div class="audio">
+<a  onclick="play()"><img src="img/audio.png"></a>
+<a  onclick="pause()"><img src="img/audio2.png"></a>
+<audio id="A1" src="audio/bensound-ukulele.mp3"></audio>
 
-<h1>Números</h1>
-<div class="block">
-      <div class="inside_blocks"><img src="img/dezn.jpg" alt="10"/></div>
-      <div class="inside_blocks"><img src="img/seisn.jpg" alt="6"/></div>
-      <div class="inside_blocks"><img src="img/oiton.jpg" alt="8"></div>
-    
-      <div class="inside_blocks"><img src="img/seten.jpg" alt="7"/></div>
-      <div class="inside_blocks"><img src="img/noven.jpg" alt="9"/></div>
-
-
-      <div class="inside_blocks"><img src="img/seisd.jpg" alt="2"/></div>
-<div class="inside_blocks"><img src="img/dezd.jpg" alt="4"/></div>
-<div class="inside_blocks"><img  src="img/oitod.jpg" alt="5"/></div>
-<div class="inside_blocks"><img src="img/seted.jpg" alt="0" /></div>
-<div class="inside_blocks"><img src="img/noved.jpg" alt="1" /></div>
-
-<div class=""><img src="img/seta.png" alt=""></div>
-
-      <div class="dropzone"><img src="img/fig2.jpg" alt=""></div>
+ <input type="button" value="Reset" class="" onClick='parent.location="javascript:location.reload()"'>
+<a href="http://devops-test-front.icarros.io/infantC/index.html"><img src="img/nex.png"></a>
   </div>
-    <br> <br> <br> <br> <br><br> <br>
+</div>
 
-<div class="cliqi">
 
-	<input type="button" value="Reset" class="next acao" onClick='parent.location="javascript:location.reload()"'>
-		
-	</div>
- <br> 
+<h2>Contando com Dedos</h2>
+
+
+
+	<div id="outer-dropzone">
+
+
+	<div id="drag-1" class="draggable drag-drop"><img src="img/dezd.jpg"></div>
+	<div id="drag-2" class="draggable drag-drop"><img  src="img/dezn.jpg"></div>
+	<div id="drag-3" class="draggable drag-drop"><img src="img/noved.jpg"></div>
+	<div id="drag-4" class="draggable drag-drop"><img src="img/oitod.jpg"></div>
+	<div id="drag-5" class="draggable drag-drop"><img src="img/oiton.jpg"></div>
+ <div id="drag-6" class="draggable drag-drop"><img src="img/seted.jpg"></div>
+
+<div id="drag-7" class="draggable drag-drop"><img src="img/seten.jpg"></div>
+<div id="drag-8" class="draggable drag-drop"><img src="img/seisn.jpg"></div>
+<div id="drag-9" class="draggable drag-drop"><img src="img/seisd.jpg"></div>
+<div id="drag-10" class="draggable drag-drop"><img src="img/noven.jpg"></div>
+
+</div>
+
+
+<div id="inner-dropzone">
+<div class="dropzone"><img src="img/fndo.jpg"></div>
+</div>
+<br>
+<div class="cred">
+<p>Música: https://www.bensound.com/royalty-free-music</p>
+</div>
 
 <script src="js/script.js"></script>
 </body>

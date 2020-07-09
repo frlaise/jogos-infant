@@ -1,49 +1,133 @@
-body {
-   background-image: url('../img/maos.png');
-  background-repeat:repeat;
-  border: 4px outset   rgba(255,248,220);
- width: 320px;
-  height:auto;
- touch-action: none;
-text-align:center;
+* {
+  box-sizing: border-box;
 
 }
-.block {
-  display: block;
-  width: 300px;
-  height: 250px;
-  border: 4px outset  rgba(34,195,158,0.9);
-  touch-action: none;
-margin-top:5px;
- 
+
+
+html{
+  background: #FFAA7FFF;
 }
-.inside_blocks {
-width: 59px;
-  height: auto;
+
+
+p{
+ font-family: 'MuseoModerno', cursive;
+ font-size: 14px;
+  line-height: 1;
+  color: #0C14A6FF;
+  margin-left: 10px;
+
+}
+
+h2{
+font-family: 'MuseoModerno', cursive;
+ font-size: 28px;
+  line-height: 1;
+  color: #0C14A6FF;
+  margin-left: 150px;
+
+
+}
+
+.draggable {
+
+  user-select: none;
   display: inline-block;
- margin:15px 0 0 10px;
+margin-top: 15px;
+ margin-left:10px;
+  
+}
+
+#outer-dropzone {
+text-align:center;
+  background-color: #A9BA72;
+  height: 400px;
+  width: 480px;
+  margin-top:2px;
+  margin-left:30px;
+  border: 7px inset #29e5e7;
+   animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 30px blue;}
+}
+
+#inner-dropzone {
+   height:250px;
+    width: 550px;
+ background-color: #B6C97B;
+  border: 7px outset #29e5e7;
+  margin-top: 40px;
+  margin-left:10px;
 }
 
 
 
 .dropzone {
-  width: 300px;
-  height:auto;
-  float:left;
- border: 4px outset  rgba(34,195,158,0.9);
- margin:5px 0 0 0;
+  width: 530px;
+height:230px;
+  background-color: #B6C97B;
+  border: outset 7px #FFAA7FFF;
+  margin:3px auto;
+  margin-left:3px;
+
+  transition: background-color 0.3s;
+}
+
+
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: transparent;
+}
+
+input{
+  border: 10px outset #29e5e7;
+  width:70px;
+  height:60px;
+ font-size:24;
+font-family: 'MuseoModerno', cursive;
+  background:  #FFAA7FFF;
+  margin-right:110px;
+  display: inline;
+float:left;
+
 
 }
 
-.cliqi input{
-  margin-top:50px;
-  width: 80px;
-  height: 40px;
- font-size: 1em;
- box-shadow: 4px 3px green;
-  background: #00AA7FFF;
-  margin-left:2px;
-  display: block;
-
+button, a{
+  border: none;
 
 }
+
+
+a{
+  cursor: pointer;
+}
+
+a img{
+  width:70px;
+  height:60px;
+  margin-right:100px;
+ border: 10px inset #29e5e7;
+
+}
+

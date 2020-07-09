@@ -1,0 +1,97 @@
+		
+* {
+  box-sizing: border-box;
+
+
+}
+
+
+html{
+background-image: -webkit-linear-gradient(top right, #D2E39E 100%, #E3F5AB 100%);
+
+
+
+
+}
+
+.at-item {
+
+   color: #5C6345;
+margin-left:100px;
+    animation-name: focus-in-expand-top;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes focus-in-expand-top {
+  0%{
+    letter-spacing: -.5em;
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+
+.grid-container {
+  display: grid;
+ grid-template-columns: 140px 140px 140px 140px;
+  grid-template-rows: 195px 195px 195px;
+  background-color:#55FFFF;
+	height:auto;
+width:680px;
+  grid-gap:30px;
+border: 5px solid #AFBD84;
+
+margin-left:20px;
+}
+
+.grid-container > div {
+  background-color:#FFFF7F;
+  text-align: center;
+  padding:7px 0;
+    margin-left:10px;
+    margin-top:10px;
+    border: 5px solid #AFBD84;
+}
+
+.pe{
+color: #404530;
+  animation-name: focus-in-expand-top;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes focus-in-expand-top {
+  0%{
+    letter-spacing: -.5em;
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+}
+
+

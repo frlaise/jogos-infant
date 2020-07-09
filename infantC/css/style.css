@@ -1,67 +1,134 @@
 * {
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+html{
+  background: #FFAA7FFF;
+}
+
+
+p{
+ font-family: 'MuseoModerno', cursive;
+ font-size:12px;
+  line-height: 1;
+  color: #000;
+  margin-left: 30px;
+
+}
+h1{
+   font-family: 'MuseoModerno', cursive;
+  line-height: 0.1;
+  color: #0C14A6FF;
+  margin-left: 80px;
+
+}
+
+
+.draggable {
+
+  user-select: none;
+  display: inline-block;
+margin-top: 7px;
+ margin-left:10px;
   
 }
 
+#outer-dropzone {
+    width: 430px;
+  height: 270px;
+ background-image: url(../img/fndu.png);
+  background-repeat: no-repeat;
+  margin-top:10px;
+  margin-left:30px;
+  border: 5px solid #fff;
+   animation: mymove 5s infinite;
+}
 
-body {
-background-color: blue;
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 30px blue;}
+}
+
+#inner-dropzone {
+   width: 500px; 
+    height:200px;
+  color: #444;
+  margin-left:10px;
+ margin-top:30px;
 
 }
 
 
-#container{
-  width: 700px;
-  height:370px;
-  border: 2px solid blue;
-  border-radius: 10px;
-  margin:10px auto;
-  position: relative;
-  background-color: green;
-  display: flex;
-  flex-wrap: wrap;
+
+.dropzone {
+  width: 390px;
+height:250px;
+  background-image: url(../img/capa.jpg);
+  background-repeat: no-repeat;
+  border: outset 7px #FFFFFFFF;
+  border-radius: 4px;
+  margin-top:30px;
+  padding:5px;
+  margin-left: 20px;
+
+  transition: background-color 0.3s;
+}
+
+
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: transparent;
+}
+
+input{
+  border: 10px outset #29e5e7;
+  width:70px;
+  height:60px;
+ font-size:24;
+font-family: 'MuseoModerno', cursive;
+  background:  #FFAA7FFF;
+  margin-right:80px;
+  display: inline;
+float:left;
+
+
+}
+
+button, a{
+  border: none;
 
 }
 
 
-.card {
-  width:130px;
-  height: 160px;
-  position:absolute;
-  border-radius: 10px;
-  perspective: 600px;
-
-
+a{
+  cursor: pointer;
 }
 
-.face{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 10px;
-  transition: all 1s;
-  backface-visibility: hidden;
+a img{
+  width:70px;
+  height:60px;
+  margin-right:80px;
+ border: 10px inset #29e5e7;
 
 }
-
-.back{
-  background-image: url('../img/face.png');
-}
-
-.back.flipped{
-  transform: rotateY(180deg);
-}
-
-.front{
-  transform: rotateY(-180deg);
-}
-
-.front.flipped{
-  transform: rotateY(0deg);
-}
-
-.card:hover{
-  box-shadow: 0 0 20px #aaa;
-}
-

@@ -1,13 +1,16 @@
-// target elements with the "draggable" class
-interact('.inside_blocks')
+function play(){document.getElementById("A1").play();}
+function pause(){document.getElementById("A1").pause();}
+// elementos de destino com a classe "draggable"
+// elementos de destino com a classe "draggable"
+interact('.draggable')
   .draggable({
-    // enable inertial throwing
+    // permitir arremesso inercial
     inertia: true,
 
-    // enable autoScroll
+    // ativar rolagem automática
     autoScroll: false,
 
-    // call this function on every dragmove event
+    // chame essa função em todo evento dragmove
     onmove: dragMoveListener,
     // call this function on every dragend event
     onend: function (event) {
@@ -38,12 +41,12 @@ interact('.inside_blocks')
 
 
 
-// enable draggables to be dropped into this
+// permitir arrastar dragables para este
 interact('.dropzone').dropzone({
-  // only accept elements matching this CSS selector
-  accept: '.block',
-  // Require a 75% element overlap for a drop to be possible
-  overlap: 0.80,
+  // aceita apenas elementos correspondentes a esse seletor CSS
+  accept: '#drag-1, #drag-2, #drag-3, #drag-4, #drag-5, #drag-6, #drag-7, #drag-8, #drag-9, #drag-10, #drag-11, #drag-12' ,
+  // Exigir uma sobreposição de elemento de 75% para que uma queda seja possível
+  overlap: 0.75,
 
   // listen for drop related events:
 
@@ -75,3 +78,5 @@ interact('.dropzone').dropzone({
     event.target.classList.remove('drop-target');
   }
 });
+
+

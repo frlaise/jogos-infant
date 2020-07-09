@@ -1,49 +1,137 @@
-body {
-   background-image: url('../img/mao1.jpg');
-   background-repeat:repeat;
-  border: 4px outset   rgba(255,248,220);
- width: 350px;
-  height:auto;
-text-align:center;
- touch-action: none;
+* {
+  box-sizing: border-box;
 
 }
-.block {
-  display: block;
-  width: 300px;
-  height: 250px;
-  border: 4px outset  rgba(34,195,158,0.9);
-margin-top:5px;
-  touch-action: none;
+
+
+html{
+  background: #FFAA7FFF;
+}
+
+
+p{
+ font-family: 'MuseoModerno', cursive;
+ font-size: 14px;
+  line-height: 1;
+  color: #000;
+  margin-left: 10px;
+  margin-top: 20px;
 
 }
-.inside_blocks {
-width: 59px;
-  height: 59px;
+
+h2{
+font-family: 'MuseoModerno', cursive;
+ font-size: 28px;
+  line-height: 1;
+  color: #0C14A6FF;
+  margin-left: 80px;
+
+
+}
+
+
+.draggable {
+
+  user-select: none;
   display: inline-block;
- margin:15px 0 0 10px;
+margin-top: 7px;
+ margin-left:15px;
+  
+}
+
+#outer-dropzone {
+  background-color: #B6C97B;
+  height: 460px;
+  width: 400px;
+  margin-top:2px;
+  margin-left:30px;
+  border: 7px inset #29e5e7;
+   animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 30px blue;}
+}
+#inner-dropzone {
+   height:200px;
+    width: 600px;
+  margin-top: 20px;
+  margin-left:10px;
 }
 
 
 
 .dropzone {
-  width: 300px;
-  height:auto;
-  float:left;
- border: 4px outset  rgba(34,195,158,0.9);
- margin:10px 0 0 0;
+  width: 640px;
+height:220px;
+  background-color: #B6C97B;
+  border: outset 7px #29e5e7;
+    margin-top:10px;
+  padding:5px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.dropzone img{
+position:center;
+margin-left: 10px;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+
+
+
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  transition: background-color 0.2s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+}
+
+  input{
+  border: 10px outset #29e5e7;
+  width:70px;
+  height:60px;
+ font-size:24;
+font-family: 'MuseoModerno', cursive;
+  background:  #FFAA7FFF;
+  margin-right:110px;
+  display: inline;
+float:left;
+
 
 }
 
-.cliqi input{
-  margin-top:100px;
-  width: 80px;
-  height: 40px;
- font-size: 1em;
- box-shadow: 4px 3px green;
-  background: #00AA7FFF;
-  margin-left:2px;
-  display: block;
-
+button, a{
+  border: none;
 
 }
+
+
+a{
+  cursor: pointer;
+}
+
+a img{
+  width:70px;
+  height:60px;
+  margin-right:90px;
+ border: 10px inset #29e5e7;
+
+}
+

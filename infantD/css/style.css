@@ -1,47 +1,133 @@
-body {
-background-color:#AAFFFFFF;
-border: 4px inset  rgba(34,195,158,0.9);
- width: 340px;
-  height:auto;
-text-align:center;
-font-family:arial,helvetica;
-
- touch-action: none;
+* {
+  box-sizing: border-box;
 
 }
-.block {
-  display: block;
-width: 330px;
-height:auto;
-  border: 2px outset  rgba(34,195,158,0.9);
-  touch-action: none;
+
+
+html{
+  background: #FFAA7FFF;
+}
+
+
+p{
+ font-family: 'MuseoModerno', cursive;
+ font-size:12px;
+  line-height: 1;
+  color: #FFFFFFFF;
+  margin-left: 80px;
 
 }
-.inside_blocks {
-  width: 101px;
-  height: 98px;
+h1{
+   font-family: 'MuseoModerno', cursive;
+  line-height: 0.1;
+  color: #0C14A6FF;
+  margin-left: 80px;
+
+}
+
+.draggable {
+
+  user-select: none;
   display: inline-block;
-
- 
-}
-.dropzone {
-  width: 320px;
-  height: auto;
-  float:left;
-  margin-top:15px;
-   border: 4px outset  rgba(34,195,158,0.9);
-
+margin-top: 7px;
+ margin-left:10px;
+  
 }
 
-.cliqi input{
-  margin-top:5px;
-  width: 80px;
-  height: 40px;
- font-size: 1em;
- box-shadow: 4px 3px green;
-  background:#AAFFFFFF;
+#outer-dropzone {
+  height: 280px;
+  width: 420px;
+ background-image: url(../img/fund.jpg);
+  background-repeat: no-repeat;
+  margin-top:2px;
+  margin-left:20px;
+  border: 5px solid #fff;
+   animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 30px blue;}
+}
+
+#inner-dropzone {
+   height:200px;
+    width: 500px;
+  
+  color: #444;
+
   margin-left:10px;
-  display: block;
+}
 
+
+
+.dropzone {
+ width: 380px;
+height:260px;
+  background-image: url(../img/capa.jpg);
+  background-repeat: no-repeat;
+  border: outset 7px #FFFFFFFF;
+  border-radius: 4px;
+  margin-top:30px;
+  padding:5px;
+  margin-left: 10px;
+
+  transition: background-color 0.3s;
+}
+
+
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: transparent;
+}
+
+ input{
+  border: 10px outset #29e5e7;
+  width:70px;
+  height:60px;
+ font-size:24;
+font-family: 'MuseoModerno', cursive;
+  background:  #FFAA7FFF;
+  margin-right:80px;
+  display: inline;
+float:left;
+
+
+}
+
+button, a{
+  border: none;
+
+}
+
+
+a{
+  cursor: pointer;
+}
+
+a img{
+  width:70px;
+  height:60px;
+  margin-right:80px;
+ border: 10px inset #29e5e7;
 
 }

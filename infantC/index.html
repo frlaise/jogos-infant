@@ -1,72 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-  
-	<title>Jogo Memória</title>
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
 
+  <title>Quebra cabeça</title>
   <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-1.12.4.js"></script>
-  
+<script src="js/interact.min.js"></script>
 
 </head>
-</body>
-<div id="container">
-    <div class="card" id="card0">
-      <div class="face back"></div>
-      <div class="face front"></div>
-</div>
-<div class="card" id="card1">
-      <div class="face back"></div>
-      <div class="face front"></div>
-</div>
+<body>
+<div class="botoes">
+<a  onclick="play()"><img src="img/audio.png"></a>
+<a  onclick="pause()"><img src="img/audio2.png"></a>
+<audio id="A1" src="audio/bensound-smallguitar.mp3"></audio>
+ <input type="button" value="Reset" class="" onClick='parent.location="javascript:location.reload()"'>
+<a href="http://devops-test-front.icarros.io/infantD/index.html"><img src="img/nex.png"></a>
+  </div>
 
-<div class="card" id="card2">
-      <div class="face back"></div>
-      <div class="face front"></div>
-</div>
+  <h1>As joaninhas</h1>
 
-<div class="card" id="card3">
-      <div class="face back"></div>
-      <div class="face front"></div>
-</div>
 
-<div class="card" id="card4">
-      <div class="face back"></div>
-      <div class="face front"></div>
-</div>
+  <div id="outer-dropzone">
 
-<div class="card" id="card5">
-      <div class="face back"></div>
-      <div class="face front"></div>
-</div>
 
-<div class="card" id="card6">
-      <div class="face back"></div>
-      <div class="face front"></div>
-</div>
+  <div id="drag-1" class="draggable drag-drop"><img src="img/fig1.jpg"></div>
+  <div id="drag-2" class="draggable drag-drop"><img src="img/fig2.jpg"></div>
+  <div id="drag-3" class="draggable drag-drop"><img src="img/fig3.jpg"></div>
+  <div id="drag-4" class="draggable drag-drop"><img src="img/fig4.jpg"></div>
+  <div id="drag-5" class="draggable drag-drop"><img src="img/fig5.jpg"></div>
+  <div id="drag-6" class="draggable drag-drop"><img src="img/fig6.jpg"></div>
 
-<div class="card" id="card7">
-      <div class="face back"></div>
-      <div class="face front"></div>
-</div>
-
-<div class="card" id="card8">
-      <div class="face back"></div>
-      <div class="face front"></div>
-</div>
-
-<div class="card" id="card9">
-      <div class="face back"></div>
-      <div class="face front"></div>
 </div>
 
 
-
-
-
-	
-  <script src="js/script.js"></script>
+<div id="inner-dropzone">
+<div class="dropzone"></div>
+</div>
+<br><br><br>
+<div class="cred">
+<p>Música: https://www.bensound.com/royalty-free-music</p>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>

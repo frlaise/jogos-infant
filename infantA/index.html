@@ -3,42 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jogo Um</title>
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap" rel="stylesheet">
+	<title>Contando com Dedos</title>
 	<link rel="stylesheet" href="css/style.css">
 	 <script src="js/interact.min.js"></script>
 </head>
 <body>
-<h1>Números</h1>
+<div class="audio">
+<div class="botoes">
+<a  onclick="play()"><img src="img/audio.png"></a>
+<a  onclick="pause()"><img src="img/audio2.png"></a>
+<audio id="A1" src="audio/bensound-ukulele.mp3"></audio>
 
-<div class="block">
-      <div class="inside_blocks"><img src="img/cincn.jpg" alt="5"/></div>
-      <div class="inside_blocks"><img src="img/quatn.jpg" alt="4"/></div>
-      <div class="inside_blocks"><img src="img/doisn.jpg" alt="2"></div>
-    
-      <div class="inside_blocks"><img src="img/zeron.jpg" alt="0"/></div>
-      <div class="inside_blocks"><img src="img/tresn.jpg" alt="3"/></div>
-      <div class="inside_blocks"><img src="img/umn.jpg" alt="1" /></div>
+ <input type="button" value="Reset" class="" onClick='parent.location="javascript:location.reload()"'>
+<a href="http://devops-test-front.icarros.io/infantB/index.html"><img src="img/nex.png"></a>
+  </div>
+
+<h2>Contando com Dedos</h2>
 
 
-      <div class="inside_blocks"><img src="img/dois.jpg" alt="2"/></div>
-<div class="inside_blocks"><img src="img/quatro.jpg" alt="4"/></div>
-<div class="inside_blocks"><img  src="img/cinco.jpg" alt="5"/></div>
-<div class="inside_blocks"><img src="img/zerod.jpg" alt="0" /></div>
-<div class="inside_blocks"><img src="img/umd.jpg" alt="1" /></div>
-<div class="inside_blocks"><img src="img/tres.jpg" alt="3" /></div>
-<div class=""><img src="img/seta.png" alt=""></div>
 
-      <div class="dropzone"><img src="img/fig1.jpg" alt=""></div>
-    </div>
-    <br> <br> <br> <br> <br>
+	<div id="outer-dropzone">
 
-<div class="cliqi">
 
-	<input type="button" value="Reset" class="next acao" onClick='parent.location="javascript:location.reload()"'>
-		
-	</div>
+	<div id="drag-1" class="draggable drag-drop"><img src="img/dois.jpg"></div>
+	<div id="drag-2" class="draggable drag-drop"><img  src="img/cinco.jpg"></div>
+	<div id="drag-3" class="draggable drag-drop"><img src="img/zerod.jpg"></div>
+	<div id="drag-4" class="draggable drag-drop"><img src="img/umd.jpg"></div>
+	<div id="drag-5" class="draggable drag-drop"><img src="img/tres.jpg"></div>
+    <div id="drag-6" class="draggable drag-drop"><img src="img/quatn.jpg"></div>
+
+<div id="drag-7" class="draggable drag-drop"><img src="img/tresn.jpg"></div>
+<div id="drag-8" class="draggable drag-drop"><img src="img/umn.jpg"></div>
+<div id="drag-9" class="draggable drag-drop"><img src="img/zeron.jpg"></div>
+<div id="drag-10" class="draggable drag-drop"><img src="img/cincn.jpg"></div>
+<div id="drag-11" class="draggable drag-drop"><img src="img/quatro.jpg"></div>
+<div id="drag-12" class="draggable drag-drop"><img src="img/doisn.jpg"></div>
+
+</div>
+
+
+<div id="inner-dropzone">
+<div class="dropzone"><img src="img/fig1.jpg"></div>
+</div>
 <br>
+<div class="cred">
+<p>Música: https://www.bensound.com/royalty-free-music</p>
+</div>
 
 <script src="js/script.js"></script>
+ 
 </body>
 </html>

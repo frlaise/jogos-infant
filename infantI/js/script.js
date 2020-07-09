@@ -1,15 +1,15 @@
-// target elements with the "draggable" class
-interact('.inside_blocks')
-  .draggable({
-    // enable inertial throwing
+function play(){document.getElementById("A1").play();}
+function pause(){document.getElementById("A1").pause();}
+
+interact('.draggable').draggable({
+
     inertia: true,
 
-    // enable autoScroll
+
     autoScroll: false,
 
-    // call this function on every dragmove event
     onmove: dragMoveListener,
-    // call this function on every dragend event
+    
     onend: function (event) {
     }
   
@@ -33,17 +33,12 @@ interact('.inside_blocks')
   }
 
 
-
-
-
-
-
-// enable draggables to be dropped into this
+// permitir arrastar dragables para este
 interact('.dropzone').dropzone({
-  // only accept elements matching this CSS selector
-  accept: '.block',
-  // Require a 75% element overlap for a drop to be possible
-  overlap: 0.80,
+  // aceita apenas elementos correspondentes a esse seletor CSS
+  accept: '#drag-1, #drag-2, #drag-3, #drag-4, #drag-5, #drag-6, #drag-7, #drag-8, #drag-9, #drag-10',
+  // Exigir uma sobreposição de elemento de 75% para que uma queda seja possível
+  overlap: 0.75,
 
   // listen for drop related events:
 
@@ -58,16 +53,18 @@ interact('.dropzone').dropzone({
     // feedback the possibility of a drop
     dropzoneElement.classList.add('drop-target');
     draggableElement.classList.add('can-drop');
-    //draggableElement.textContent = 'le bloc est dedans';
+  
   },
   ondragleave: function (event) {
     // remove the drop feedback style
     event.target.classList.remove('drop-target');
     event.relatedTarget.classList.remove('can-drop');
-    event.relatedTarget.classList.remove('drop-ok');//enlever la class
+    event.relatedTarget.classList.remove('drop-ok');
+    //event.relatedTarget.textContent = 'Dragged out'
   },
   ondrop: function (event) {
-    event.relatedTarget.classList.add('drop-ok'); //ajouter la class
+    event.relatedTarget.classList.add('drop-ok');
+    //event.relatedTarget.textContent = 'Dropped'
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
@@ -75,3 +72,7 @@ interact('.dropzone').dropzone({
     event.target.classList.remove('drop-target');
   }
 });
+
+
+
+
