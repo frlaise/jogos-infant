@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+ touch-action: none;
+
+}
+
+
+html{
+  background: #FFAA7FFF;
+}
+
+
+p{
+ font-family: 'MuseoModerno', cursive;
+ font-size: 14px;
+  line-height: 1;
+  color: #000;
+  margin-left: 10px;
+  margin-top: 20px;
+
+}
+
+h1{
+font-family: 'MuseoModerno', cursive;
+ font-size: 28px;
+  line-height: 1;
+  color: #0C14A6FF;
+  margin-left: 80px;
+
+
+}
+
+
+.draggable {
+
+  user-select: none;
+  display: inline-block;
+margin-top: 7px;
+ margin-left:15px;
+  
+}
+
+#outer-dropzone {
+  height: 450px;
+  width: 400px;
+ touch-action: none;
+background-image: url("../img/fund.png");
+ background-repeat:no-repeat;
+  margin-top:2px;
+  margin-left:30px;
+  border: 5px solid #fff;
+   animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 30px blue;}
+}
+#inner-dropzone {
+   height:200px;
+    width: 600px;
+  display: grid;
+  color: #444;
+  margin-top: 20px;
+  margin-left:10px;
+}
+
+
+
+.dropzone {
+  width: 640px;
+height:240px;
+  background-color: #FFAA7FFF;
+  border: outset 7px #FFFFFFFF;
+    margin-top:10px;
+  padding:5px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.dropzone img{
+position:center;
+margin-left: 10px;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+
+
+
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  transition: background-color 0.2s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+}
+
+  input{
+  border: 10px outset #29e5e7;
+  width:70px;
+  height:60px;
+ font-size:24;
+font-family: 'MuseoModerno', cursive;
+  background:  #FFAA7FFF;
+  margin-right:110px;
+  display: inline;
+float:left;
+
+
+}
+
+button, a{
+  border: none;
+
+}
+
+
+a{
+  cursor: pointer;
+}
+
+a img{
+  width:70px;
+  height:60px;
+  margin-right:90px;
+ border: 10px inset #29e5e7;
+
+}
+
