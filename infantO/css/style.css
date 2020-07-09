@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+ touch-action: none;
 
 }
 
@@ -37,6 +38,7 @@ margin-top: 7px;
 #outer-dropzone {
   height: 300px;
   width: 390px;
+ touch-action: none;
   background-repeat: no-repeat;
   margin-top:30px;
   margin-left:10px;

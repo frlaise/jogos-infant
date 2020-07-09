@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+ touch-action: none;
 
 }
 
@@ -41,6 +42,7 @@ margin-top: 7px;
   background-repeat: no-repeat;
   margin-top:2px;
   margin-left:20px;
+ touch-action: none;
   border: 5px solid #fff;
    animation: mymove 5s infinite;
 }

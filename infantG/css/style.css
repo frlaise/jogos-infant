@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+ touch-action: none;
 
 }
 
@@ -39,6 +40,7 @@ background-image: url(../img/fund.png);
  background-repeat:no-repeat;
   width: 440px;
   height: 280px;
+ touch-action: none;
   margin-top:2px;
   margin-left:20px;
   border: 5px solid #fff;

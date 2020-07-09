@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+ touch-action: none;
 
 }
 
@@ -39,6 +40,7 @@ margin-top: 7px;
 #outer-dropzone {
  width: 370px;
   height: 270px;
+ touch-action: none;
    background-image: url('../img/fund.png');
   background-repeat: no-repeat;
 background-position: center;

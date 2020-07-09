@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+ touch-action: none;
 
 }
 
@@ -36,6 +37,7 @@ margin-top: 7px;
 }
 
 #outer-dropzone {
+ touch-action: none;
   width: 600px;
   height: 300px;
  background-image: url(../img/capa.png);

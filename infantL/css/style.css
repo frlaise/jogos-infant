@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+ touch-action: none;
 
 }
 
@@ -40,6 +41,7 @@ h2{
 #outer-dropzone {
    width: 410px;
   height: 200px;
+ touch-action: none;
   background-image: url('../img/fndu.png');
   background-repeat: no-repeat;
   margin-top:2px;
